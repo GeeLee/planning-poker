@@ -5,11 +5,14 @@
     "main": "poker-server.js",
     "repository": {
         "type": "git",
-        "url": "https://github.com/djungowski/planning-poker"
+        "url": "https://github.com/GeeLee/planning-poker"
     },
     "author": {
         "name": "Dominik Jungowski"
     },
+    "scripts": {
+        "start": "node poker-server.js --websocket-port=$OPENSHIFT_NODEJS_PORT --log-level=1"
+    }
     "dependencies": {
         "express":      "*",
         "ejs":          "*",
